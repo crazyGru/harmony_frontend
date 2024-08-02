@@ -1,0 +1,290 @@
+/* Set the width and color of the scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #e3f2fd;
+}
+
+/* Set the background color of the scroll bar track */
+::-webkit-scrollbar-track {
+    background-color: #bbdefb;
+}
+
+/* Set the color and rounded corners of the scroll bar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #bbdefb;
+    border-radius: 0px;
+}
+
+/* Set the color of the scroll bar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #64b5f6;
+}
+
+.custom-scroll {
+    max-height: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.image-viewer {
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+}
+
+.benefit-list-viewer {
+    height: 350px;
+    width: 310px;
+    overflow-y: auto;
+}
+
+.badge-input {
+    padding: 2px;
+    border-radius: 0px;
+    background-color: #e8ebfa;
+    color: #1565c0;
+    border: 1px solid #c5cbfa;
+    text-align: center;
+    outline: none;
+    width: 25px;
+}
+
+.measurement-div {
+    margin: 6px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.measurement-name {
+    margin-left: 10px;
+    width: 200px;
+}
+
+
+.fa-solid {
+    width: 10px;
+}
+
+.badge-dropdown {
+    padding: 2px;
+    border-radius: 0px;
+    background-color: #e8ebfa;
+    color: #1565c0;
+    border: 1px solid #c5cbfa;
+    text-align: center;
+    outline: none;
+    width: 100px;
+    height: 16px;
+    display: flex;
+}
+
+.main_parent {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 160px);
+    background-color: #bbdefb;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.m_reference {
+    width: 15%;
+    margin: 10px;
+    border-radius: 10px;
+    height: calc(100% - 20px);
+    border: 1px solid #0d47a1;
+    background-color: #bbdefb;
+    color: #0d47a1;
+    z-index: "100";
+}
+
+.m_profile {
+    width: 75vh;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #bbdefb;
+}
+
+.m_setting {
+    margin: 10px;
+    border-radius: 10px;
+    height: calc(100% - 20px);
+    border: 1px solid #0d47a1;
+}
+
+.image_drawer {
+    width: 35vh;
+    border: 2px solid #0d47a1;
+    border-radius: 20px;
+    max-width: 35vh;
+    max-height: 35vh;
+    height: auto;
+    width: auto;
+}
+
+.badge-dropdown select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #1565c0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.badge-dropdown select::-ms-expand {
+    display: none;
+    background-color: #e8ebfa;
+    border: 1px solid #c5cbfa;
+    width: 100px;
+}
+
+.badge-dropdown select option {
+    font-weight: normal;
+    width: 100px;
+}
+
+
+.marquee-container {
+    margin-left: 10px;
+    display: flex;
+    width: 132px;
+    /* Set the desired width of the marquee container */
+    overflow: hidden;
+    /* Hide the overflowing content */
+}
+
+.marquee-content {
+    display: inline-block;
+    /* Make the content flow horizontally */
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+.marquee {
+    animation: marquee 4s linear infinite;
+    /* Apply the marquee animation */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+        /* Start the content off-screen */
+    }
+
+    50% {
+        transform: translateX(-30%);
+        /* Scroll the content to the left */
+    }
+
+    100% {
+        transform: translateX(-30%);
+        /* Scroll the content to the left */
+    }
+}
+.m_upload_button{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: #0d47a1;
+    height: 50px;
+    width: 50px;
+    border: solid 2px #0d47a1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.m_button{
+    color: #0d47a1;
+    height: 40px;
+    width: 120px;
+    border: solid 2px #0d47a1;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: medium;
+}
+.lock-div {
+    position: relative;
+    top: calc(4% + 50px);
+    right: 2%;
+    width: 100%;
+    color: #0d47a1;
+    height: 50px;
+    width: 50px;
+    border: solid 2px #0d47a1;
+    border-radius: 20px;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+}
+
+.lock-div.show {
+    opacity: 1;
+}
+
+.main_child {
+    min-width: 300px;
+    overflow-y: auto;
+    z-index: 99;
+}
+
+.front_profile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.side_profile {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.front_photo_area {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side_photo_area {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo_div {
+    position: relative;
+    width: 35vh;
+    height: 35vh;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fvgz9i8 {
+    max-width: 1920px;
+}
+
+/* position: "relative", display: "flex", width: "50%", justifyContent: "space-between" }} onMouseOver={unavailableAreaInHandle} onMouseOut={unavailableAreaOutHandle}>
+                            <div style={{ display: "flex", alignItems: "center", flexDirection: "column", justifyContent: "center" */
