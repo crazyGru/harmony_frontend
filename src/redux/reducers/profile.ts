@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+import { enqueueSnackbar } from 'notistack';
 
 import { ETHNICITIES } from '@/constants/ethnicity';
 import { GENDERS } from '@/constants/gender';
@@ -95,12 +96,7 @@ export const profileReducer = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const {
-  loadProfiles,
-  createProfile,
-  saveProfile,
-  updateName,
-  updateDate,
-} = profileReducer.actions;
+export const { loadProfiles, createProfile, saveProfile, updateName, updateDate } =
+  profileReducer.actions;
 
 export default profileReducer.reducer;

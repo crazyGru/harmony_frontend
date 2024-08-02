@@ -11,9 +11,6 @@ import { store } from './redux/store';
 
 import './index.css';
 
-const SEO_TITLE = 'Harmony';
-const SEO_DESCRIPTION = 'Analyze your face with Harmony, the AI facial analysis tool. Discover your attractiveness score and get personalized plastic surgery recommendations. Try out our fun AI morphing features to see potential enhancements. Explore now!';
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <>
     <Helmet>
@@ -21,8 +18,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <title>Harmony</title>
       <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
       <meta
-        name={SEO_TITLE}
-        content={SEO_DESCRIPTION}
+        name="description"
+        content="Harmony brings efficient workflow solutions to your business. Collaborate, organize, and track work seamlessly. Sign up now to enhance productivity."
       />
     </Helmet>
     <React.StrictMode>

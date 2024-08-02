@@ -25,7 +25,3 @@ dist-ssr
 
 # Video assets
 /src/assets/videos
-
-# Environment Variables
-.env
-.npmrc

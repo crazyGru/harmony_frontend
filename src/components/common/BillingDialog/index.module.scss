@@ -21,7 +21,7 @@
   }
   > .subscription {
     > .buttons {
-      @apply flex items-center gap-x-8 justify-end;
+      @apply flex items-center gap-x-8;
       > .button {
         @apply px-2.5;
       }
