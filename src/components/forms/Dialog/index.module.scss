@@ -1,0 +1,55 @@
+.screen {
+  @apply h-screen w-screen fixed top-0 left-0 flex items-center justify-center backdrop-blur-md z-[500];
+}
+
+.root {
+  @apply flex flex-col h-fit w-full border-1 border-secondary;
+  > .header {
+    @apply bg-secondary relative py-4 px-6;
+    > span.close {
+      @apply absolute top-4 right-4 size-9 rounded-full bg-success flex items-center justify-center cursor-pointer;
+      > svg {
+        @apply text-2xl fill-primary;
+      }
+    }
+  }
+  > .body {
+    @apply bg-primary grow flex flex-col overflow-y-auto;
+  }
+}
+
+.screenWidth {
+  @apply max-w-[90%];
+}
+
+.triXLWidth {
+  @apply max-w-screen-3xl;
+}
+
+.duoXLWidth {
+  @apply max-w-screen-2xl;
+}
+
+.xlWidth {
+  @apply max-w-screen-xl;
+}
+
+.lgWidth {
+  @apply max-w-screen-lg;
+}
+
+.mdWidth {
+  @apply max-w-screen-md;
+}
+
+.smWidth {
+  @apply max-w-screen-sm;
+}
+
+.selfWidth {
+  @apply w-fit;
+}
+
+.fullHeight {
+  @apply h-4/5;
+}

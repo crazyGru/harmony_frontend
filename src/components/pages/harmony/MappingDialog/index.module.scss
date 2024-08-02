@@ -1,0 +1,47 @@
+.header {
+  @apply text-3xl;
+}
+
+.wrapper {
+  @apply flex flex-col h-full justify-center items-center;
+  > .images {
+    @apply flex items-center justify-center h-[95%];
+    > .image {
+      @apply aspect-square;
+      > img {
+        @apply w-full h-full select-none object-cover;
+      }
+    }
+
+    > .template {
+      @apply relative;
+      > .matchPt {
+        @apply absolute size-2 rounded-full bg-green-500 transform -translate-x-1/2 -translate-y-1/2;
+      }
+    }
+
+    > .mapper {
+      @apply relative;
+      > .landmark {
+        @apply absolute size-1.5 rounded-full bg-red-500 cursor-pointer transform -translate-x-1/2 -translate-y-1/2;
+      }
+      > .magnifier {
+        @apply absolute -right-24 -bottom-24 size-48 transform -translate-x-1/2 -translate-y-1/2  border-1 border-emphasize flex items-center justify-center cursor-pointer rounded-full;
+
+        > span {
+          @apply bg-red-500 size-1.5 rounded-full;
+        }
+      }
+      > .autoDetectBtn {
+        @apply size-12 rounded-full bg-success absolute bottom-4 left-4 flex items-center justify-center cursor-pointer;
+        > svg {
+          @apply text-3xl;
+        }
+      }
+    }
+  }
+}
+
+.dlgTitle {
+  @apply text-3xl;
+}

@@ -1,0 +1,30 @@
+.header {
+  @apply text-3xl;
+}
+
+.billing {
+  @apply flex flex-col gap-y-4 py-4 px-8;
+  > .header {
+    @apply flex items-center gap-x-2;
+    > p {
+      @apply text-xl;
+    }
+    > span {
+      @apply bg-blue-500 rounded-full px-2.5 text-xs;
+    }
+    > span.premium {
+      @apply bg-green-500;
+    }
+    > span.platinum {
+      @apply bg-violet-500;
+    }
+  }
+  > .subscription {
+    > .buttons {
+      @apply flex items-center gap-x-8 justify-end;
+      > .button {
+        @apply px-2.5;
+      }
+    }
+  }
+}

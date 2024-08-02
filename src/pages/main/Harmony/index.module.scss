@@ -1,0 +1,9 @@
+.root {
+  @apply h-full overflow-y-auto flex flex-col;
+  .container {
+    @apply flex grow overflow-y-auto gap-x-2;
+    .workspace {
+      @apply grow overflow-y-auto bg-secondary border-1 border-secondary;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.header {
+  .toppanel {
+    @apply flex gap-x-2 items-end;
+    > p {
+      @apply text-3xl uppercase;
+    }
+    > .badges {
+      @apply flex gap-x-1;
+      > span {
+        @apply rounded-full px-4 py-0.5 bg-green-500 text-xs border-1 border-green-700;
+      }
+      > .free {
+        @apply blur-sm select-none;
+      }
+    }
+  }
+  > p {
+    @apply text-xs mt-2;
+  }
+}
+
+.scoreCell {
+  @apply w-full relative text-xs;
+  > span {
+    @apply absolute transform -translate-x-1/2 -translate-y-full;
+  }
+  > .colorbar {
+    @apply bg-gradient-to-r h-2 from-red-700 to-green-500 relative rounded-full;
+    > span {
+      @apply h-full w-0.5 bg-white absolute;
+    }
+  }
+  .minmax {
+    @apply flex justify-between;
+  }
+}
+
+.imageCell {
+  @apply size-16 rounded-full border-1 border-emphasize cursor-pointer;
+}
+
+.meaningCell {
+  @apply my-auto;
+}
+
+.adviceCell {
+  @apply my-auto font-Poppins text-wrap;
+}
+
+.downloadBtn {
+  @apply rounded-full size-7 bg-success flex items-center justify-center cursor-pointer;
+}

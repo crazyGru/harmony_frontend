@@ -1,0 +1,268 @@
+.root {
+  .container {
+    @apply max-w-screen-lg 2xl:max-w-screen-xl mx-auto px-8 pt-12 pb-8;
+  }
+  .blackback {
+    @apply bg-black;
+  }
+  .introduction {
+    @apply flex flex-col gap-y-12 items-center;
+    > .title {
+      @apply text-5xl;
+    }
+    > .videos {
+      @apply grid grid-cols-2 gap-8;
+      > .video {
+        @apply flex flex-col gap-y-4 justify-between;
+        > .description {
+          @apply flex flex-col gap-y-2;
+          > p {
+            @apply text-secondary text-lg;
+          }
+          > ul {
+            @apply flex flex-col gap-y-0.5;
+            > li {
+              @apply text-sm flex gap-x-2 before:size-2 before:rounded-full before:shrink-0 before:bg-bright before:transform before:translate-y-1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .harness {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center;
+    > .detail {
+      @apply flex flex-col gap-y-2;
+      > p.title {
+        @apply text-4xl leading-[40px] lg:text-5xl lg:leading-[60px];
+      }
+      > p.subtitle {
+        @apply text-xl;
+      }
+      > div.idealize {
+        @apply mt-4 flex flex-col gap-y-1;
+        > span {
+          @apply text-secondary;
+        }
+        > div {
+          @apply flex flex-col gap-y-0.5;
+          > p {
+            @apply flex gap-x-2 text-sm;
+            > span {
+              @apply rounded-full size-1.5 bg-bright shrink-0 transform translate-y-2;
+            }
+          }
+        }
+      }
+    }
+    > .animation {
+      @apply flex p-4 w-full h-full items-center justify-center overflow-x-hidden;
+    }
+  }
+  .streamline {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center;
+    > .assessments {
+      @apply flex items-center;
+      > p {
+        @apply text-4xl;
+      }
+    }
+    > .instructions {
+      > p.primaryheader {
+        @apply text-4xl font-medium mb-4;
+      }
+      > p.primarybody {
+        @apply text-lg mb-8;
+      }
+      > .secondarypanel {
+        @apply grid grid-cols-1 lg:grid-cols-2;
+        > div {
+          p.header {
+            @apply text-[20px] leading-[24px] font-medium mb-2;
+          }
+          p.body {
+            @apply text-base;
+          }
+        }
+      }
+    }
+  }
+  .cost {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center place-content-center mb-16;
+    > .text {
+      > .title {
+        @apply text-4xl leading-[40px] lg:text-5xl mb-4 lg:leading-[60px];
+      }
+    }
+    > .compare {
+      @apply min-h-[400px] w-full;
+      > canvas {
+        @apply w-full;
+      }
+    }
+  }
+  .facials {
+    > .title {
+      @apply text-4xl lg:text-5xl mb-8 text-center;
+    }
+    > .assessments {
+      @apply flex flex-col gap-y-4 gap-x-10 justify-between items-center lg:flex-row lg:items-start;
+      > .assess {
+        @apply bg-secondary px-6 pt-8 pb-4 max-w-[300px] flex flex-col items-center gap-y-6;
+        > span {
+          @apply size-14 flex items-center justify-center bg-primary rounded-full text-4xl;
+          > svg {
+            @apply fill-secondary;
+          }
+        }
+        > p {
+          @apply text-center m-0;
+        }
+      }
+    }
+  }
+  .betatest {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center mb-16;
+    > .text {
+      > .title {
+        @apply text-4xl lg:text-5xl mb-4;
+      }
+      > ul {
+        @apply flex flex-col gap-y-0.5;
+      }
+      > ul.primarylist {
+        @apply mb-4;
+      }
+      > ul.secondarylist {
+        @apply mt-2;
+        > li {
+          @apply flex gap-x-1;
+          > svg {
+            @apply transform translate-y-1;
+          }
+        }
+      }
+    }
+    > .picture {
+      @apply flex items-center flex-col gap-y-2;
+      > span {
+        @apply flex items-center justify-center size-12 rounded-full bg-secondary;
+      }
+    }
+  }
+  .visit {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8;
+    > .blog {
+      > p.title {
+        @apply text-4xl mb-4;
+      }
+      > a {
+        @apply text-secondary underline;
+      }
+    }
+    > .steps {
+      @apply flex gap-2 justify-between;
+      > div {
+        @apply bg-secondary px-6 py-4 flex flex-col items-center gap-4;
+        > p {
+          @apply text-primary font-medium text-center;
+        }
+        > span {
+          @apply size-12 rounded-full bg-primary flex items-center justify-center;
+          > svg {
+            @apply text-4xl fill-secondary stroke-secondary;
+          }
+          > svg.landmark {
+            @apply text-2xl;
+          }
+        }
+      }
+    }
+  }
+  .whyharmony {
+    @apply flex flex-col gap-y-8 items-center mt-16;
+    > p {
+      @apply text-4xl;
+    }
+    > .sections {
+      @apply grid grid-cols-4 gap-4;
+      > .section {
+        @apply flex flex-col items-center gap-y-4 bg-secondary px-4 py-6;
+        > p {
+          @apply text-xl text-secondary;
+        }
+        > .text {
+          @apply text-sm text-primary text-center;
+        }
+        > ul {
+          @apply flex flex-col gap-y-2;
+          > li {
+            @apply text-sm flex gap-x-2 before:size-2 before:rounded-full before:bg-bright before:shrink-0 before:transform before:translate-y-1.5;
+          }
+        }
+      }
+      > .section.harmony {
+        @apply border-1 border-secondary;
+      }
+    }
+  }
+  .pricing {
+    @apply flex flex-col items-center;
+    > p.title {
+      @apply text-4xl lg:text-5xl mb-2;
+    }
+    > p.subtitle {
+      @apply text-secondary mb-8 text-center;
+    }
+  }
+  .b2b {
+    @apply flex flex-col gap-y-4;
+    .content {
+      @apply grid grid-cols-2 gap-8;
+      > .integration {
+        > .title {
+          @apply text-4xl mb-4;
+        }
+      }
+      > .target {
+        @apply flex flex-col items-center gap-y-2;
+        > .title {
+          @apply text-2xl text-center;
+        }
+        > ul > li {
+          @apply text-center;
+        }
+      }
+    }
+    > .sender {
+      @apply self-end text-secondary flex flex-col gap-y-1 justify-end;
+      > .describe {
+        @apply text-sm;
+      }
+      > .email {
+        @apply self-end text-secondary hover:underline cursor-pointer text-sm;
+      }
+    }
+  }
+  .surgeons {
+    @apply flex flex-col gap-y-8 items-center;
+    > .title {
+      @apply text-center text-4xl;
+    }
+    > .content {
+      @apply text-center max-w-[600px];
+    }
+    > ul {
+      @apply flex gap-x-8 items-center;
+      > li {
+        @apply flex flex-col gap-y-4 items-center;
+        > img {
+          @apply size-20;
+        }
+      }
+    }
+  }
+  .emphasize {
+    @apply text-secondary;
+  }
+}

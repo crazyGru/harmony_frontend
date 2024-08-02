@@ -1,0 +1,28 @@
+.root {
+  @apply flex relative min-h-[80px];
+  > div {
+    @apply shrink-0 text-sm flex items-center justify-center max-h-24 overflow-y-auto px-2;
+  }
+  > div.clamp {
+    > * {
+      @apply line-clamp-1;
+    }
+  }
+  > div.scroll {
+    @apply items-start;
+  }
+  > div.justifyLeft {
+    @apply justify-start;
+  }
+  > div.justifyCenter {
+    @apply justify-center;
+  }
+  > div.justifyRight {
+    @apply justify-end;
+  }
+
+  .blur {
+    @apply backdrop-blur-md absolute w-full h-full bg-white/10 left-0 top-0 select-none;
+    
+  }
+}
